@@ -11,11 +11,17 @@ class Single extends Component {
     }
 
     render() {
+        const classes = [ 'card__single', this.containerClasses ];
         return (
             // <div className={"col-12 col-md-4 col-xl-3"}>
-            <div className={ this.containerClasses }>
-                <img src={this.props.image} alt={this.props.name}/>
-                <h1>{this.props.name}</h1>
+            <div className={ classes.join( ' ' ) }>
+                <div>
+                    <img src={this.props.image} alt={this.props.name}/>
+
+                    <div className="card__title">
+                        <h2>{this.props.name}</h2>
+                    </div>
+                </div>
             </div>
         );
     }

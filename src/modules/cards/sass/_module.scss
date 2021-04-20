@@ -1,0 +1,26 @@
+.card__single {
+	margin: ($grid-gutter-width / 2) 0;
+	> div {
+		border: 1px solid $primary;
+		border-radius: 15px;
+		-moz-box-shadow: 0 0 3px #666;
+		-webkit-box-shadow: 0 0 3px #666;
+		box-shadow: 0 0 3px #666;
+		display : flex;
+		flex-direction: column;
+		overflow: hidden;
+
+		> div.card__title {
+			justify-self: flex-end;
+			width: 100%;
+			background-color: $primary;
+			text-align: center;
+			padding : 6px 15px;
+
+			h2 {
+				color: $text-color-against-primary;
+				font-size: 18px;
+			}
+		}
+	}
+}
